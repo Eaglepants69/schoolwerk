@@ -1,0 +1,167 @@
+html{
+	top: 0px;
+}
+body{
+	font-family: Verdana;
+	margin: 0px;
+
+}
+.container{
+	display: flex;
+	/* hier staat het top flak in */
+}
+	.container>div{
+		position: fixed;
+		justify-content: center;
+		flex-direction: row;
+		/* zorgt ervoor dat alle divs in de container deze waarden krijgen*/
+	}
+		#top_flak{
+			position: sticky;
+			top: 0px;
+			background-color: #a0a3a3;
+			height: 55px;
+			width: 100%;
+			/* balk waar de buttons in staan*/
+		}
+
+		.button{
+			background-color:#a0a3a3;
+			width: 120px;
+			height: 55px;
+			border-top: none;
+			border-bottom: none;
+			float: left;
+			font-family: Verdana;
+			list-style: none;
+			text-align: center;
+			color: white;
+
+			/* standaard class voor de navigatie buttons*/
+		}
+		.button:hover{
+			background-color:#cacfce;
+			/* standaard class voor de navigatie buttons als je erover heen gaat met de muis*/
+		}
+		.button:active{
+			background-color: #dee3e3;
+			/* standaard class voor de navigatie buttons als je klikt met de muis*/
+		}
+		
+		#button_right{
+			border-right: none;
+			border-left: none;
+			/* haalt borders van de buttons weg*/
+		}
+		#logo{
+			width: 110px;
+			height: 55px;
+			/*logo van de site*/
+		}
+
+		#login_div{
+			position: fixed;
+			margin-left: 45%;
+			margin-top: 10%;
+			/* div waar de login form staat*/
+		}
+		.login_button{
+			background-color: #3bdbff;
+			border-radius: 20px;
+			border: none;
+			/* button voor het inloggen*/
+		}
+		.login_input{
+			border-radius: 20px;
+			/*textbox voor login*/
+		}
+		#register_div{
+			position: fixed;
+			margin-left: 45%;
+			margin-top: 25%;
+			/* div waar het registreren in staat*/
+		}
+		#logout_div{
+			position: fixed;
+			margin-left: 45%;
+			margin-top: 40%;
+			list-style: none;
+			background-color: white;
+			/* logout button*/
+		}
+	.background{
+		width: 100%;
+		height: 937px;
+		position: absolute;
+		right: 0px;
+		z-index: -1;
+		/* achtergrond foto*/
+	}
+	#div_standpunten_1{
+		position: static;
+		width: 50%;
+		margin-top: 40px;
+		left: 30%; 
+		border: 2px solid black;
+		/*eerste div waar standpunten van de partij in staan*/
+	}
+	#div_standpunten_1_inner{
+		padding: 5px;
+	}
+	#div_standpunten_2{
+		position: static;
+		right: 33.5%;
+		width: 50%;
+		top: 7.5%;
+		border: 2px solid black;
+
+
+		/*tweede div waar standpunten van de partij in staan*/
+	}
+	#div_standpunten_2_inner{
+		padding: 1%;
+	}
+	#div_standpunten_3{
+		position: static;
+		width: 50%;
+		border: 2px solid black;
+		/* derde div waar standpunten van de partij instaan*/
+	}
+	#div_standpunten_3_inner{
+		padding: 1px;
+	}
+	#div_index_main{
+		position: relative;
+		margin-top: 50px;
+		margin-left: 15%;
+		width: 70%;
+		height: 75%;
+		border: 1px solid black;
+		background-color: white;
+		opacity: 0.6;
+		/* code voor de div waar partij leden in staan */
+	}
+	#div_h2{
+		text-align: center;
+		/* de tekst op de index pagina bij de foto's */
+	}
+	.stick_figure{
+		width: 90%;
+		height: 350px;
+		background-color: white;
+		/* de foto's op de index pagina */
+	}
+	.div_h3{
+		text-align: center;
+		/* de namen van de foto's */
+	}
+	.tekst{
+		text-align: center;
+		/* de tekst onder de foto's */
+	}
+	.div_stick_figure{
+	display: inline-block;
+	width: 33%;
+	/* de div waar de foto's in staan */
+
+	}
